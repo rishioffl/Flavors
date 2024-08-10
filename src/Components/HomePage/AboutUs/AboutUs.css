@@ -1,0 +1,141 @@
+/* Unique class for About Us Page body */
+.about-us-page-body 
+{
+    background: 
+    linear-gradient(0deg, #00000088 10%, #00000088 10%),
+    url('../../../Assets/AboutUs/AbBg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Unique class for container */
+.about-us-container 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Unique class for about section */
+.about-us-section 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Unique class for left and right content in about section */
+.about-us-left, .about-us-right 
+{
+    flex: 1;
+    padding: 20px;
+}
+
+.about-us-left h1, .about-us-right h1 
+{
+    font-size: 2rem;
+}
+
+.about-us-left p, .about-us-right p 
+{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.clearfix 
+{
+    clear: both;
+}
+
+.about-us-right img, .about-us-left img 
+{
+    width: 100%; /* Make image responsive */
+    max-width: 600px; /* Maximum width to avoid it getting too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+}
+
+.about-us-left img 
+{
+    max-width: 700px; /* Increase the max-width for left image */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius similar to right image */
+    /* margin-top: 7%; Optional: Adjust spacing */
+}
+
+.mission-section .about-us-right img 
+{
+    width: 100%; /* Make image responsive */
+    max-width: 600px; /* Maximum width to avoid it getting too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+}
+
+.team-section 
+{
+    text-align: center;
+}
+
+.team-section h1 
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-card 
+{
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-circle-container
+ {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.team-card h2 
+{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.team-card h4 
+{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.team-card p 
+{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Unique class for footer */
+.about-us-footer
+{
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.aboutustext
+{
+    font-weight: 400;
+}

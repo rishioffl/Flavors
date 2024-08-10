@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+:root {
+    --color-bg: #f6f6f6;
+    --color-accent: #b69c6f;
+    --color-primary: #272d3d;
+}
+
+.sbcoloritalian {
+    background-color: #772222;
+}
+
+.bg1 {
+    background-color: #772222;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+section {
+    background: #f6f6f6;
+    width: calc(100% - 110px);
+    height: calc(100% - 900px);
+    min-height: calc(100vh - 80px);
+    position: relative;
+    margin: 0.1px auto;
+    overflow: hidden;
+}
+
+section#cover span.side {
+    position: absolute;
+    height: 100%;
+    background: #878181;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 24px;
+    border-right: 1px solid #272d3d;
+    z-index: 100;
+    font-family: "Playfair Display", serif;
+}
+
+section#cover span.side h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+section#cover span.side svg {
+    width: 32px;
+    height: 32px;
+    stroke: #272d3d;
+}
+
+section#cover .content {
+    position: absolute;
+    width: calc(100% - 160px);
+    height: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    line-height: 110%;
+    align-items: center;
+    flex: 3;
+    display: flex;
+    position: relative;
+    padding-right: 80px;
+}
+
+section h1:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 6px;
+    background: #272d3d;
+    bottom: 0;
+}
+
+section#cover .content span {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+section#cover .content span a {
+    text-decoration: none;
+    color: #b69c6f;
+}
+
+section#cover .content figure {
+    width: 100%;
+    height: 60%;
+    flex: 3;
+    position: relative;
+}
+
+section#cover .content figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: #f6f6f6;
+    font-family: "Lato", serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 32px;
+    opacity: 0.6;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+section#recipe {
+    background: #f6f6f6;
+    color: #272d3d;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+section#recipe .overview {
+    border: 1px solid red;
+    width: 100%;
+}
+
+section#recipe .description {
+    width: 100%;
+    padding: 40px 0;
+}
+
+section#recipe .recipe_details {
+    width: 100%;
+}
+
+section#recipe {
+    padding: 90px;
+}
+
+section#recipe h1 {
+    padding-bottom: 56px;
+}
+
+section#recipe .recipe_details ul {
+    list-style: none;
+    color: #b69c6f;
+    display: flex;
+    padding: 24px 0;
+}
+
+section#recipe .recipe_details ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+section#recipe .recipe_details ul li span,
+section#recipe .recipe-content > div > h2 {
+    font-family: "Lato", serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+section#recipe .recipe-content {
+    width: 100%;
+    display: flex;
+    margin-top: 56px;
+}
+
+section#recipe .recipe-content > div {
+    width: 50%;
+}
+
+section#recipe .recipe-content > div > h2 {
+    margin-bottom: 32px;
+}
+
+section#recipe .recipe-content .ing-list {
+    padding-right: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+section#recipe .recipe-content .recipe-list {
+    padding-left: 56px;
+}
+
+section#recipe .recipe-content > div > h2 {
+    font-weight: 900;
+}
+
+section#recipe .recipe-content > div:first-of-type {
+    border-right: 1px solid #272d3d;
+}
+
+section#recipe .recipe-content .ingredients {
+    margin-bottom: 24px;
+}
+
+section#recipe .recipe-content .ing-list figure img {
+    width: 100%;
+}
+
+section#recipe .recipe-content .ing-list figure {
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+section#recipe .recipe-content .ing-list figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+p.variation {
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+p.variation span {
+    font-family: "Lato", serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+ol {
+    list-style: none;
+    counter-reset: counter;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+}
+
+ol > li {
+    counter-increment: counter;
+    margin-bottom: 16px;
+    width: 100%;
+    position: relative;
+}
+
+ol > li::before {
+    content: counter(counter) ".";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1rem;
+    color: #b69c6f;
+    font-family: "Playfair Display", serif;
+    min-width: 48px;
+    max-width: 48px;
+    position: absolute;
+    margin-left: -64px;
+    text-align: right;
+}
+
+ol > li > ul {
+    margin-left: 24px;
+    list-style-type: square;
+    margin-top: 16px;
+}
+
+ol > li > ul > li {
+    margin-bottom: 8px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    section {
+        width: calc(100% - 48px);
+        height: calc(100% - 48px);
+        min-height: calc(100vh - 48px);
+        margin: 24px auto;
+    }
+
+    section#recipe {
+        padding: 56px 40px;
+    }
+
+    section#cover .content {
+        width: calc(100% - 80px);
+    }
+
+    section h1 {
+        font-size: 40px;
+        padding: 0 32px;
+    }
+
+    section#recipe h1 {
+        padding: 0 0 56px 0;
+    }
+
+    section#cover .content span {
+        font-size: 22px;
+        padding: 0 32px;
+    }
+
+    section#recipe .recipe-content {
+        flex-direction: column;
+    }
+
+    section#recipe .recipe-content > div {
+        width: 100%;
+    }
+
+    section#recipe .recipe-content > div:first-of-type {
+        border-right: none;
+    }
+
+    section#recipe .recipe-content .ing-list {
+        padding-right: 0;
+    }
+
+    section#recipe .recipe-content .recipe-list {
+        padding-left: 0;
+    }
+}

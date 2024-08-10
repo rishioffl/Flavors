@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+:root {
+    --color-bg: #f6f6f6;
+    --color-accent: #b69c6f;
+    --color-primary: #272d3d;
+}
+
+.sbcolor-tiramisu {
+    background-color: #772222;
+}
+
+.bg-tiramisu {
+    background-color: #772222;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+section {
+    background: #f6f6f6;
+    width: calc(100% - 110px);
+    height: calc(100% - 900px);
+    min-height: calc(100vh - 80px);
+    position: relative;
+    margin: 0.1px auto;
+    overflow: hidden;
+}
+
+section#cover-tiramisu span.side-tiramisu {
+    position: absolute;
+    height: 100%;
+    background: #878181;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 24px;
+    border-right: 1px solid #272d3d;
+    z-index: 100;
+    font-family: "Playfair Display", serif;
+}
+
+section#cover-tiramisu span.side-tiramisu h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+section#cover-tiramisu span.side-tiramisu svg {
+    width: 32px;
+    height: 32px;
+    stroke: #272d3d;
+}
+
+section#cover-tiramisu .content-tiramisu {
+    position: absolute;
+    width: calc(100% - 160px);
+    height: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    line-height: 110%;
+    align-items: center;
+    flex: 3;
+    display: flex;
+    position: relative;
+    padding-right: 80px;
+}
+
+section h1:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 6px;
+    background: #272d3d;
+    bottom: 0;
+}
+
+section#cover-tiramisu .content-tiramisu span {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+section#cover-tiramisu .content-tiramisu span a {
+    text-decoration: none;
+    color: #b69c6f;
+}
+
+section#cover-tiramisu .content-tiramisu figure {
+    width: 100%;
+    height: 60%;
+    flex: 3;
+    position: relative;
+}
+
+section#cover-tiramisu .content-tiramisu figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: #f6f6f6;
+    font-family: "Lato", serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 32px;
+    opacity: 0.6;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+section#recipe-tiramisu {
+    background: #f6f6f6;
+    color: #272d3d;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+section#recipe-tiramisu .overview {
+    border: 1px solid red;
+    width: 100%;
+}
+
+section#recipe-tiramisu .description-tiramisu {
+    width: 100%;
+    padding: 40px 0;
+}
+
+section#recipe-tiramisu .recipe-details-tiramisu {
+    width: 100%;
+}
+
+section#recipe-tiramisu {
+    padding: 90px;
+}
+
+section#recipe-tiramisu h1 {
+    padding-bottom: 56px;
+}
+
+section#recipe-tiramisu .recipe-details-tiramisu ul {
+    list-style: none;
+    color: #b69c6f;
+    display: flex;
+    padding: 24px 0;
+}
+
+section#recipe-tiramisu .recipe-details-tiramisu ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+section#recipe-tiramisu .recipe-details-tiramisu ul li span,
+section#recipe-tiramisu .recipe-content-tiramisu > div > h2 {
+    font-family: "Lato", serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu {
+    width: 100%;
+    display: flex;
+    margin-top: 56px;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu > div {
+    width: 50%;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu > div > h2 {
+    margin-bottom: 32px;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu .ing-list-tiramisu {
+    padding-right: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu .recipe-list-tiramisu {
+    padding-left: 56px;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu > div > h2 {
+    font-weight: 900;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu > div:first-of-type {
+    border-right: 1px solid #272d3d;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu .ingredients-tiramisu {
+    margin-bottom: 24px;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu .ing-list-tiramisu figure img {
+    width: 100%;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu .ing-list-tiramisu figure {
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+section#recipe-tiramisu .recipe-content-tiramisu .ing-list-tiramisu figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+p.variation {
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+p.variation span {
+    font-family: "Lato", serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+ol {
+    list-style: none;
+    counter-reset: counter;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+}
+
+ol > li {
+    counter-increment: counter;
+    margin-bottom: 16px;
+    width: 100%;
+    position: relative;
+}
+
+ol > li::before {
+    content: counter(counter) ".";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1rem;
+    color: #b69c6f;
+    font-family: "Playfair Display", serif;
+    min-width: 48px;
+    max-width: 48px;
+    position: absolute;
+    margin-left: -64px;
+    text-align: right;
+}
+
+ol > li > ul {
+    margin-left: 24px;
+    list-style-type: square;
+    margin-top: 16px;
+}
+
+ol > li > ul > li {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: calc(100% - 48px);
+        height: calc(100% - 48px);
+        min-height: calc(100vh - 48px);
+        margin: 24px auto;
+    }
+
+    section#recipe-tiramisu {
+        padding: 56px 40px;
+    }
+
+    section#cover-tiramisu .content-tiramisu {
+        width: calc(100% - 80px);
+    }
+
+    section h1 {
+        font-size: 40px;
+        padding: 0 32px;
+    }
+
+    section#recipe-tiramisu h1 {
+        padding: 0 0 56px 0;
+    }
+
+    section#cover-tiramisu .content-tiramisu span {
+        font-size: 22px;
+        padding: 0 32px;
+    }
+
+    section#recipe-tiramisu .recipe-content-tiramisu {
+        flex-direction: column;
+    }
+
+    section#recipe-tiramisu .recipe-content-tiramisu > div {
+        width: 100%;
+    }
+
+    section#recipe-tiramisu .recipe-content-tiramisu > div:first-of-type {
+        border-right: none;
+    }
+
+    section#recipe-tiramisu .recipe-content-tiramisu .ing-list-tiramisu {
+        padding-right: 0;
+    }
+
+    section#recipe-tiramisu .recipe-content-tiramisu .recipe-list-tiramisu {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+:root {
+    --color-bg: #f6f6f6;
+    --color-accent: #b69c6f;
+    --color-primary: #272d3d;
+}
+
+.sbcoloritalian {
+    background-color: #772222;
+}
+
+.bg1 {
+    background-color: #772222;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+section {
+    background: #f6f6f6;
+    width: calc(100% - 110px);
+    height: calc(100% - 900px);
+    min-height: calc(100vh - 80px);
+    position: relative;
+    margin: 0.1px auto;
+    overflow: hidden;
+}
+
+section#cover-branzino span.side-branzino {
+    position: absolute;
+    height: 100%;
+    background: #f6f6f6; /* Adjusted to match Code 2's requirement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 24px;
+    border-right: 1px solid #272d3d;
+    z-index: 100;
+    font-family: "Playfair Display", serif;
+}
+
+section#cover-branzino span.side-branzino h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+section#cover-branzino span.side-branzino svg {
+    width: 32px;
+    height: 32px;
+    stroke: #272d3d;
+}
+
+section#cover-branzino .content-branzino {
+    position: absolute;
+    width: calc(100% - 160px);
+    height: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+	/* TEXT COLOR */
+	color: black;
+}
+
+section h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    line-height: 110%;
+    align-items: center;
+    flex: 3;
+    display: flex;
+    position: relative;
+    padding-right: 80px;
+}
+
+section h1:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 6px;
+    background: #272d3d;
+    bottom: 0;
+}
+
+section#cover-branzino .content-branzino span {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+section#cover-branzino .content-branzino span a {
+    text-decoration: none;
+    color: #b69c6f;
+}
+
+section#cover-branzino .content-branzino figure {
+    width: 100%;
+    height: 60%;
+    flex: 3;
+    position: relative;
+}
+
+section#cover-branzino .content-branzino figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: #f6f6f6;
+    font-family: "Lato", serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 32px;
+    opacity: 0.6;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+section#recipe-branzino {
+    background: #f6f6f6;
+    color: #272d3d;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    line-height: 160%;
+    padding: 90px; /* Updated from 80px to match Code 2 */
+}
+
+section#recipe-branzino h1 {
+    padding-bottom: 56px;
+}
+
+section#recipe-branzino .recipe-details-branzino ul {
+    list-style: none;
+    color: #b69c6f;
+    display: flex;
+    padding: 24px 0;
+}
+
+section#recipe-branzino .recipe-details-branzino ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+section#recipe-branzino .recipe-details-branzino ul li span,
+section#recipe-branzino .recipe-content-branzino > div > h2 {
+    font-family: "Lato", serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+section#recipe-branzino .recipe-content-branzino {
+    width: 100%;
+    display: flex;
+    margin-top: 56px;
+}
+
+section#recipe-branzino .recipe-content-branzino > div {
+    width: 50%;
+}
+
+section#recipe-branzino .recipe-content-branzino > div > h2 {
+    margin-bottom: 32px;
+    font-weight: 900;
+}
+
+section#recipe-branzino .recipe-content-branzino .ing-list-branzino {
+    padding-right: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+section#recipe-branzino .recipe-content-branzino .recipe-list-branzino {
+    padding-left: 56px;
+}
+
+section#recipe-branzino .recipe-content-branzino > div:first-of-type {
+    border-right: 1px solid #272d3d;
+}
+
+section#recipe-branzino .recipe-content-branzino .ingredients-branzino {
+    margin-bottom: 24px;
+}
+
+section#recipe-branzino .recipe-content-branzino .ing-list-branzino figure {
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+section#recipe-branzino .recipe-content-branzino .ing-list-branzino figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+p.variation-branzino {
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+p.variation-branzino span {
+    font-family: "Lato", serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+ol {
+    list-style: none;
+    counter-reset: counter;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+}
+
+ol > li {
+    counter-increment: counter;
+    margin-bottom: 16px;
+    width: 100%;
+    position: relative;
+}
+
+ol > li::before {
+    content: counter(counter) ".";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1rem;
+    color: #b69c6f;
+    font-family: "Playfair Display", serif;
+    min-width: 48px;
+    max-width: 48px;
+    position: absolute;
+    margin-left: -64px;
+    text-align: right;
+}
+
+ol > li > ul {
+    margin-left: 24px;
+    list-style-type: square;
+    margin-top: 16px;
+}
+
+ol > li > ul > li {
+    margin-bottom: 8px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    section {
+        width: calc(100% - 48px);
+        height: calc(100% - 48px);
+        min-height: calc(100vh - 48px);
+        margin: 24px auto;
+    }
+
+    section#recipe-branzino {
+        padding: 56px 40px;
+    }
+
+    section#cover-branzino .content-branzino {
+        width: calc(100% - 80px);
+    }
+
+    section h1 {
+        font-size: 40px;
+        padding: 0 32px;
+    }
+
+    section#recipe-branzino h1 {
+        padding: 0 0 56px 0;
+    }
+
+    section#cover-branzino .content-branzino span {
+        font-size: 22px;
+        padding: 0 32px;
+    }
+
+    section#recipe-branzino .recipe-content-branzino {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 56px;
+    }
+
+    section#recipe-branzino .recipe-content-branzino > div {
+        width: 100%;
+    }
+
+    section#recipe-branzino .recipe-content-branzino > div:first-of-type {
+        border-right: none;
+        border-bottom: 1px solid #272d3d;
+    }
+
+    section#recipe-branzino .recipe-content-branzino .ing-list-branzino figure {
+        height: auto;
+    }
+
+    section#recipe-branzino .recipe-content-branzino .recipe-list-branzino {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: calc(100% - 24px);
+        height: auto;
+        min-height: auto;
+        margin: 12px auto;
+    }
+
+    section h1 {
+        font-size: 32px;
+        padding: 0;
+    }
+
+    section#recipe-branzino {
+        padding: 24px 16px;
+    }
+
+    section#recipe-branzino .recipe-content-branzino {
+        flex-direction: column;
+    }
+
+    section#recipe-branzino .recipe-content-branzino > div {
+        width: 100%;
+    }
+
+    section#recipe-branzino .recipe-content-branzino .ing-list-branzino figure {
+        height: 200px;
+    }
+	
+}

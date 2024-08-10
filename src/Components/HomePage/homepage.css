@@ -1,0 +1,558 @@
+
+body {
+    /* background-color:#C0C0C0; */
+    /* background-color:#ff4000; */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  .recipename
+  {
+    color: #fff;
+  }
+  .header {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    position:absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    height: 60px;
+    box-sizing: border-box;
+  }
+  
+  
+  .header.scrolled {
+    /* background-color: rgba(255, 169, 83, 0.5); */
+    background-color: #c0c0c0c9;
+    border-radius: 25px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #logo-main {
+    margin-right: 20px;
+  }
+  
+  #navbar-primary.navbar-default {
+    background: transparent;
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fffafa;
+
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    color: #fffafa;
+    margin: 0;
+  }
+  
+  .navbar-nav > li {
+    margin: 0 5px;
+    color: #fffafa;
+
+  }
+  
+  .navbar-nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-nav .search-container {
+    display: flex;
+    align-items: center;
+    color: #fffafa;
+
+  }
+  
+  .navbar-nav .search-container .search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: -15px;
+    color: #fffafa;
+
+  }
+  
+  /* footer */
+  
+  .section__padding {
+    padding: 4rem 4rem;
+  }
+  
+  .footer {
+    background-color: black;
+  }
+  
+  .sb__footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sb__footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .sb__footer-links_div {
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white; /* Ensure this color is light */
+  }
+  
+  a {
+    color: rgb(255, 255, 255); /* Change to white for better visibility */
+    text-decoration: none;
+  }
+  
+  .socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .socialmedia img {
+    width: 80%;
+  }
+  
+  .sb__footer-links_div h4 {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0.9rem;
+    /* padding-left: 15cm; */
+  }
+
+.desc{
+  font-weight: 300;
+}
+  
+  .sb__footer-links_div p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  
+  .sb__footer-below {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+  }
+  
+  .sb__footer-below-links {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sb__footer-below-links p {
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 2rem;
+    color: white; /* Ensure this color is light */
+    font-weight: 600;
+  }
+  
+  hr {
+    color: white !important;
+    width: 100%;
+  }
+  
+  .sb__footer-copyright p {
+    font-size: 13px;
+    line-height: 15px;
+    color: white; /* Ensure this color is light */
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .sb__footer-heading h1 {
+      font-size: 44px;
+      line-height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .sb__footer-heading h1 {
+      font-size: 34px;
+      line-height: 42px;
+    }
+    .sb__footer-links div {
+      margin: 1rem 0;
+    }
+    .sb__footer-btn p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .sb__footer-below {
+      flex-direction: column;
+      justify-content: left;
+    }
+    .sb__footer-below-links {
+      flex-direction: column;
+    }
+    .sb__footer-below-links p {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sb__footer-heading h1 {
+      font-size: 27px;
+      line-height: 38px;
+    }
+  }
+  
+  
+  
+  /* Parallax CSS */
+  
+  .content {
+    min-height: 100vh;
+  }
+  
+  .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px 15px;
+    transform: translate(-50%, -50%);
+    /* background: rgba(235, 227, 227, 0.488); */
+    color: white;
+    border-radius: 20px;
+    font-size: 50px;
+  }
+  
+  /* Cards Section */
+  .cards-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2; /* Ensure cards are above parallax background */
+  }
+  
+  .card {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;  /* Fixed width */
+    height: 400px; /* Fixed height */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    margin: 0 20px; /* Add horizontal margin for spacing between cards */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Fixed height for the images */
+    object-fit: cover; /* Ensure images cover the space and maintain aspect ratio */
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Parallax CSS */
+  .content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .text-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    z-index: 1;
+  }
+  
+  
+  
+  /* Slider CSS */
+  .slider {
+    position: relative;
+    width: 100vw;  /* Full viewport width */
+    height: 70vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.1cm;
+    margin-bottom: 1cm;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 96%;     /* Adjust width to create small margins on sides */
+    height: 90%;    /* Adjust height to ensure images are responsive */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Reduced transition duration */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .slide.active {
+    transform: translateX(0);
+    z-index: 2;
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;  /* Reduced padding for a thinner border */
+    background-color: white;
+    transition: transform 0.1s;
+  }
+  
+  .slide img:hover {
+    transform: scale(1.05);
+  }
+  .Homelist
+  {
+    padding-left: 2cm;
+  }
+  .Recipelist
+  {
+    padding-left: 2cm;
+  }
+  .contactuslist
+  {
+    color: whitesmoke;
+    padding-left: 2cm;
+  }
+  .Aboutlist
+  {
+    color: whitesmoke;
+    padding-left: 2cm;
+  }
+  .Logoutlist
+  {
+    padding-left: 2cm;
+  }
+
+  .hero-section {
+    position: absolute; /* Ensure it's positioned over the video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, #00000088 30%, #ffffff0f 80%);
+    color: #ffffff;
+    z-index: 10; /* Ensure it appears above the video */
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  }
+  
+  .hero-section h2 {
+    font-size: 3em;
+    margin: 0;
+    color: #ff3030; /* Heading color */
+    animation: slideIn 1s ease-out; /* Slide-in effect */
+  }
+  
+  .hero-section p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out 1s; /* Fade-in effect with delay */
+    margin-bottom: 230px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Video Section Styles */
+  .video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+    
+  }
+  
+  .video-section video {
+    position: absolute;
+    top: 70px;
+    /* padding-top:-10cm; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+    transition: opacity 1s ease-in-out; /* Fade effect */
+  }
+  
+  .video-section video:hover {
+    opacity: 0.4; /* Dim effect on hover */
+  }
+  
+  .scroll-arrow {
+    background: rgba(255, 255, 255, 0.193); /* Semi-transparent background */
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 2em;
+    color: #ff3030;
+    cursor: pointer;
+    position: absolute;
+    bottom: 350px; /* Move it 60px from the bottom of the hero section */
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 20; /* Ensure it appears above everything */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for 3D effect */
+  }
+  
+  .scroll-arrow:hover {
+    background: rgba(255, 255, 255, 0.8); /* Less transparent on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .scroll-arrow:focus {
+    outline: none; /* Remove outline when focused */
+  }
+
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+
+
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .video-text, .video-texts {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 80%;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .video-text {
+    color: #f35d5d;
+    font-style: italic;
+    /* font-weight:bolder; */
+    font-size: x-large;
+  }
+  
+  @media (max-width: 600px) {
+    .video-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  }
