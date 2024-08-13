@@ -1,101 +1,94 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import WelcomeCard from './WelcomeCard';
-import RecipeCard from './RecipeCard';
-
-
+import React, { useState, useEffect } from 'react';
 import './AdminDashboard.css';
-// const NavBar = () => {
-  const NavBar = () => {
-    const handleAddRecipe = (recipe) => {
-      console.log('Adding recipe:', recipe);
-      // Implement the logic to add the recipe (e.g., make an API call)
-    }; 
-  
-    const handleRemoveRecipe = (recipeName) => {
-      console.log('Removing recipe:', recipeName);
-      // Implement the logic to remove the recipe (e.g., make an API call)
+import NavBar from './NavBar'; // Import the new NavBar component
+import { useNavigate } from 'react-router-dom';
+import WelcomeCard from './WelcomeCard';
+
+const AdminDashboard = () => {
+  const [houses, setHouses] = useState(0);
+  const [owners, setOwners] = useState(0);
+  const [users, setUsers] = useState(0); // Initialize users count to 0
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Simulate the ticker effect
+    let housesCount = 0;
+    let ownersCount = 0;
+    let usersCount = 0;
+
+    const housesInterval = setInterval(() => {
+      if (housesCount < 250) {
+        housesCount += 1;
+        setHouses(housesCount);
+      } else {
+        clearInterval(housesInterval);
+      }
+    }, 10); // Adjust speed by changing the interval
+
+    const ownersInterval = setInterval(() => {
+      if (ownersCount < 50) {
+        ownersCount += 1;
+        setOwners(ownersCount);
+      } else {
+        clearInterval(ownersInterval);
+      }
+    }, 30); // Adjust speed by changing the interval
+
+    const usersInterval = setInterval(() => {
+      if (usersCount < 200) {
+        usersCount += 1;
+        setUsers(usersCount);
+      } else {
+        clearInterval(usersInterval);
+      }
+    }, 20); // Adjust speed by changing the interval
+
+    return () => {
+      clearInterval(housesInterval);
+      clearInterval(ownersInterval);
+      clearInterval(usersInterval);
     };
+  }, []);
+
   return (
-    <div>
-      <WelcomeCard />
-        <RecipeCard/>
-    <div id="nav-bar">
-      
-      <input id="nav-toggle" type="checkbox" />
-      
-      <div id="nav-header">
-        <a id="nav-title" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-codepen"></i>FLAVÖRS
-        </a>
-        <label htmlFor="nav-toggle">
-          <span id="nav-toggle-burger"></span>
-        </label>
-        <hr />
-      </div>
-
-      <div id="nav-content">
-        <div className="nav-button">
-          <i className="fas fa-palette"></i>
-          <span>Your Work</span>
-        </div>
-        <div className="nav-button">
-          <i className="fas fa-images"></i>
-          <span>Assets</span>
-        </div>
-        <div className="nav-button">
-          <i className="fas fa-thumbtack"></i>
-          <span>Pinned Items</span>
-        </div>
-        <hr />
-        <div className="nav-button">
-          <i className="fas fa-heart"></i>
-          <span>Following</span>
-        </div>
-        <div className="nav-button">
-          <i className="fas fa-chart-line"></i>
-          <span>Trending</span>
-        </div>
-        <div className="nav-button">
-          <i className="fas fa-fire"></i>
-          <span>Challenges</span>
-        </div>
-        <div className="nav-button">
-          <i className="fas fa-magic"></i>
-          <span>Spark</span>
-        </div>
-        <hr />
-        <div className="nav-button">
-          <i className="fas fa-gem"></i>
-          <Link to="/"><span>Logout</span></Link>
-        </div>
-        <div id="nav-content-highlight"></div>
-      </div>
-
-      <input id="nav-footer-toggle" type="checkbox" />
-      
-      <div id="nav-footer">
-        <div id="nav-footer-heading">
-          <div id="nav-footer-avatar">
-            <img src="https://gravatar.com/avatar/4474ca42d303761c2901fa819c4f2547" alt="Avatar" />
+    <div className='admin-body'>
+      <div className="admin-dashboard-container">
+        <NavBar /> {/* Replace the old sidebar with NavBar */}
+        <main className="admin-main-content">
+          <h1>Admin Dashboard</h1>
+          <div className="admin-stats-container">
+            <div className="admin-stats-card">
+              <h3>{users}+ Users</h3>
+              <p>Total number of registered users.</p>
+            </div>
+            <div className="admin-stats-card">
+              <h3>{houses}+ Recipes</h3>
+              <p>Total number of available Recipes.</p>
+            </div>
+            <div className="admin-stats-card">
+              <h3>{owners}+ Cuisines</h3>
+              <p>Total number of available cuisines.</p>
+            </div>
           </div>
-          <div id="nav-footer-titlebox">
-            <a id="nav-footer-title" target="_blank" rel="noopener noreferrer">
-              Rishi Raghavendran
-            </a>
-            {/* <span id="nav-footer-subtitle">Admin</span> */}
+          <div className="admin-recent-activities">
+            <h3>Recent Activities</h3>
+            <div className="admin-activity-card">
+              <i className="fas fa-user-plus"></i>
+              <p>New Recipe added: Thai Red Curry </p>
+            </div>
+            <div className="admin-activity-card">
+              <i className="fas fa-home"></i>
+              <p>New Cuisine Added: Thai</p>
+            </div>
+            <div className="admin-activity-card">
+              <i className="fas fa-user-plus"></i>
+              <p>New User registration: Rishi Raghavendran</p>
+            </div>
           </div>
-          <label htmlFor="nav-footer-toggle">
-            <i className="fas fa-caret-up"></i>
-          </label>
-        </div>
-        <div id="nav-footer-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
+        </main>
       </div>
-    </div>
     </div>
   );
 };
 
-export default NavBar;
+export default AdminDashboard;

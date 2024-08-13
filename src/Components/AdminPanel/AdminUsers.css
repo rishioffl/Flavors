@@ -1,0 +1,323 @@
+.admin-body {
+    background-color: wheat;
+}
+
+.admin-dashboard-container {
+    display: flex;
+    height: 100vh;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-sidebar {
+    width: 250px;
+    height: 90vh;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar-header h2 {
+    color: black;
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+.admin-sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-sidebar-nav ul li {
+    margin-bottom: 25px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.admin-sidebar-nav ul li:hover {
+    background-color: wheat;
+}
+
+.admin-sidebar-nav ul li i {
+    margin-right: 15px;
+    font-size: 32px;
+}
+
+.admin-logout {
+    position: absolute;
+    bottom: 20px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+
+.admin-logout i {
+    margin-right: 10px;
+}
+
+.admin-main-content {
+    flex-grow: 1;
+    padding: 20px;
+    /* Ensure heading is not pushed down */
+    margin-top: 10px; /* Remove margin at the top */
+}
+.admin-heading {
+    margin-top: 0;
+    background: rgba(204, 49, 49, 0.1); /* Transparent background */
+    padding: 10px;
+    /* border-radius: 7px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1), 0 0 15px; */
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px); /* Optional: add blur effect to enhance transparency */
+    position: relative; /* Ensure it's positioned relative to its container */
+}
+
+.admin-heading h1 {
+    color: black;
+    font-size: 28px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+/* Button container */
+.admin-add-owner-button {
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    padding: 10px;
+}
+.confirmDelete
+{
+    color: #dc3545;
+}
+.confirmdelmess
+{
+    color: black;
+    font-weight: 400;
+}
+.admin-users-table {
+    width: 98%;
+    border-collapse: separate; /* Change from collapse to separate for spacing */
+    border-spacing: 0 10px; /* Add space between rows */
+    padding-left: 40px;
+}
+
+.admin-users-table th, .admin-users-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.admin-users-table th {
+    background-color: white;
+    font-weight: bold;
+}
+
+.admin-users-table tbody tr {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.admin-users-table tbody tr:hover {
+    background-color: #f5f5f5; /* Light background color on hover */
+    transform: translateY(-5px); /* Lift row up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect on hover */
+}
+
+.admin-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Increased padding for larger buttons */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better depth */
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.admin-add-button, .admin-delete-button {
+    background-color: black;
+    color: white;
+}
+
+.admin-add-button:hover, .admin-delete-button:hover {
+    background-color: #333; /* Darker shade of black on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.admin-delete-button {
+    margin-right: 5px;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+/* AdminOwners.css */
+
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increase space between input fields */
+}
+
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.adminaddpopup-input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px; /* Enhanced border radius */
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Popup Buttons */
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popup-button.add {
+    background-color: #28a745;
+    color: white;
+}
+
+.popup-button.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.popup-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-box h2 {
+    margin: 0 0 10px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popup-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-yes {
+    background: green;
+}
+
+.popup-no {
+    background: red;
+}
+
+.popup-button.add {
+    background-color: #28a745;
+    color: white;
+}
+
+.popup-button.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+.confirm-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-buttons {
+    margin-top: 20px;
+}
+
+.confirm-yes, .confirm-no {
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.confirm-yes {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.confirm-no {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+

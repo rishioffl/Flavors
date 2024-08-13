@@ -9,7 +9,7 @@ const AboutUsPage = () => {
       <div className="about-us-container">
         <div className="about-us-section">
           <div className="about-us-left">
-            <h1>About Us</h1>
+            <h1>ABOUT US</h1>
             <hr />
             <p className='aboutustext'>
             At FLAVÖRS, we believe that cooking should be a delightful and interactive experience. 
@@ -31,7 +31,7 @@ const AboutUsPage = () => {
             {/* <img src={aboutus2} alt="Mission Statement" /> */}
           </div>
           <div className="about-us-right">
-            <h1>Mission Statement</h1>
+            <h1>MISSION STATEMENT</h1>
             <hr />
             <p className='aboutustext'>
             Our mission is to inspire and empower home cooks with detailed, easy-to-follow recipes from around the world. 
@@ -51,7 +51,7 @@ const AboutUsPage = () => {
             {/* <img src={aboutus2} alt="Mission Statement" /> */}
           </div>
           <div className="about-us-right">
-            <h1>Flavörs Key Features</h1>
+            <h1>FLAVÖRS KEY FEATURES</h1>
             <hr />
             <p className='aboutustext'>
               <h3>Diverse Cuisine Selection</h3>
@@ -73,7 +73,7 @@ const AboutUsPage = () => {
           <div className="clearfix"></div>
         </div>
         <div className="team-section">
-          <h1>Administartor<hr /></h1>
+          <h1>ADMINISTRATOR<hr /></h1>
           <div className="team-card">
             <div className="team-circle-container">
               <h1 style={{ color: '#fff' }}>R</h1>

@@ -1,0 +1,72 @@
+.adminstats-container {
+    display: flex;
+    padding-left: 18.5%;
+  }
+  
+  .adminstats-sidebar {
+    width: 250px;
+    height: 100vh; /* Ensure the sidebar covers the full height of the viewport */
+    background: linear-gradient(135deg, #0f0f0f, #2c2c2c); /* Dark gradient background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .adminstats-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    background: #e2944f; /* Background color for the content area */
+    min-height: 100vh; /* Ensure the content area covers the full height */
+  }
+  
+  .adminstats-content h1 {
+    font-size: 2.5em;
+    color: #ff6600; /* Neon blue text color */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 40px;
+  }
+  
+  .adminstats-section {
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #2a2a2a; /* Slightly lighter background for sections */
+    box-shadow: 0 0 10px rgba(42, 42, 26, 0.5); /* Neon glow effect */
+    border-radius: 10px;
+  }
+  
+  .adminstats-section h2 {
+    font-size: 1.8em;
+    color: #ff4d00; /* Neon blue text color */
+    margin-bottom: 20px;
+  }
+  
+  .adminstats-card-container, .adminstats-stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .adminstats-card, .adminstats-stat-card {
+    background: #1f1f1f; /* Background color for cards */
+    color: #ff2a00; /* Neon blue text color */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .adminstats-card:hover, .adminstats-stat-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  

@@ -13,6 +13,8 @@ import ContactUs from './Components/HomePage/ContactUs/ContactUs';
 import Arancini from './Components/Recipes/Italian/Arancini';
 import AboutUs from './Components/HomePage/AboutUs/AboutUs';
 import AdminDashboard from './Components/AdminPanel/AdminDashboard';
+import AdminUsers from './Components/AdminPanel/AdminUsers';
+import AdminStats from './Components/AdminPanel/AdminStats';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
 
           {/* ADMIN ROUTING */}
           <Route path="/admindashboard" element={<AdminDashboard />} />
+          <Route path="/adminusers" element={<AdminUsers />} />
+          <Route path="/adminstats" element={<AdminStats />} />
 
           </Routes>
           </BrowserRouter>

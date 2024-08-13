@@ -3,12 +3,12 @@ import './homepage.css';
 import { Parallax } from "react-parallax";
 import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
-import paris from '../../Assets/HomePage/paris.png';
+import paris from '../../Assets/HomePage/FranceBg.jpg';
 import india from '../../Assets/HomePage/india.jpg';
-import japan from '../../Assets/HomePage/japan.jpg';
-import china from '../../Assets/HomePage/china.jpg';
+import japan from '../../Assets/HomePage/Sakura.jpg';
+import china from '../../Assets/HomePage/ChinaBg.jpg';
 import italy from '../../Assets/HomePage/italy.jpg';
-import korea from '../../Assets/HomePage/korea.jpg';
+import korea from '../../Assets/HomePage/KoreaBg copy.jpg';
 import logo from '../../Assets/HomePage/logo.png';
 import fb from '../../Assets/HomePage/fb.png';
 import twitter from '../../Assets/HomePage/twitter.png';
@@ -103,6 +103,7 @@ const HomePage = () => {
             <div className="container-fluid">
               <div className="collapse navbar-collapse" id="navbar-primary-collapse">
                 <ul className="nav navbar-nav">
+                  <Link to="/admindashboard"><li className='contactuslist'>Admin</li></Link>
                   <Link to="/contactus"><li className='contactuslist'>Contact Us</li></Link>
                   <Link to="/requestrecipe"><li className='contactuslist'>Request Recipe</li></Link>
                   <Link to="/aboutus"><li className='Aboutlist'>About-Us</li></Link>
