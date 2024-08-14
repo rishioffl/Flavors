@@ -203,21 +203,21 @@ const HomePage = () => {
                 <div className="card">
                   <img src={soba} alt="soba" />
                   <div className="card-content">
-                    <h2 className='recipename'>Soba</h2>
+                  <Link to="/soba"><h2 className='recipename'>Soba</h2></Link>
                     <p className='desc'> Thin Japanese noodles made from buckwheat flour, served either chilled with a dipping sauce or in hot broth as a noodle soup.</p>
                   </div>
                 </div>
                 <div className="card">
                   <img src={donburi} alt="donburi" />
                   <div className="card-content">
-                    <h2 className='recipename'>Donburi</h2>
+                  <Link to="/donburi"><h2 className='recipename'>Donburi</h2></Link>
                     <p className='desc'>A Japanese rice bowl dish topped with various ingredients such as meat, fish, vegetables, and a simmered sauce.</p>
                   </div>
                 </div>
                 <div className="card">
                   <img src={dorayaki} alt="dorayaki" />
                   <div className="card-content">
-                    <h2 className='recipename'>Dorayaki</h2>
+                  <Link to="/dorayaki"><h2 className='recipename'>Dorayaki</h2></Link>
                     <p className='desc'>A Japanese confection consisting of two small pancake-like cakes filled with sweet red bean paste.</p>
                   </div>
                 </div>

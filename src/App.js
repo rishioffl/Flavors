@@ -18,6 +18,9 @@ import AdminStats from './Components/AdminPanel/AdminStats';
 import DakGalbi from './Components/Recipes/Korean/DakGalbi'
 import Mochi from './Components/Recipes/Korean/Mochi'
 import Tteokbokki from './Components/Recipes/Korean/Tteokbokki'
+import Donburi from './Components/Recipes/Japanese/Donburi';
+import Dorayaki from './Components/Recipes/Japanese/Dorayaki';
+import Soba from './Components/Recipes/Japanese/Soba';
 
 function App() {
   return (
@@ -39,6 +42,10 @@ function App() {
           <Route path="/mochi" element={<Mochi />} />
           <Route path="/tteokkbokki" element={<Tteokbokki />} />
 
+          <Route path="/donburi" element={<Donburi />} />
+          <Route path="/dorayaki" element={<Dorayaki />} />
+          <Route path="/soba" element={<Soba />} />
+
           <Route path="/admin" element={<Admin />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />
@@ -51,7 +58,6 @@ function App() {
 
           </Routes>
           </BrowserRouter>
-          {/* <AdminDashboard/> */}
     </div>
   );
 }
