@@ -290,22 +290,22 @@ const HomePage = () => {
                 <div className="card">
                   <img src={tteokbokki} alt="tteokbokki" />
                   <div className="card-content">
-                    <h2 className='recipename'>Tteokbokki</h2>
+                  <Link to="/tteokkbokki"><h2 className='recipename'>Tteokbokki</h2></Link>
                     <p className='desc'>A popular Korean street food made with chewy rice cakes cooked in a spicy and sweet gochujang (Korean chili paste) sauce.</p>
                   </div>
                 </div>
                 <div className="card">
                   <img src={dakgalbi} alt="DakGalbi" />
                   <div className="card-content">
-                    <h2 className='recipename'>Dak Galbi</h2>
+                  <Link to="/dakgalbi"><h2 className='recipename'>Dak Galbi</h2></Link>
                     <p className='desc'>A Korean dish made by stir-frying marinated chicken pieces in a gochujang-based sauce with vegetables like cabbage, sweet potatoes, and rice cakes.</p>
                   </div>
                 </div>
                 <div className="card">
                   <img src={mochi} alt="Mochi" />
                   <div className="card-content">
-                    <h2 className='recipename'>Mochi</h2>
-                    <p className='desc'>rice cake made from glutinous rice pounded into a sticky, chewy texture, often filled with sweet or savory fillings.</p>
+                  <Link to="/mochi"><h2 className='recipename'>Mochi</h2></Link>
+                    <p className='desc'>Rice cake made from glutinous rice pounded into a sticky, chewy texture, often filled with sweet or savory fillings.</p>
                   </div>
                 </div>
               </div>

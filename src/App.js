@@ -15,6 +15,9 @@ import AboutUs from './Components/HomePage/AboutUs/AboutUs';
 import AdminDashboard from './Components/AdminPanel/AdminDashboard';
 import AdminUsers from './Components/AdminPanel/AdminUsers';
 import AdminStats from './Components/AdminPanel/AdminStats';
+import DakGalbi from './Components/Recipes/Korean/DakGalbi'
+import Mochi from './Components/Recipes/Korean/Mochi'
+import Tteokbokki from './Components/Recipes/Korean/Tteokbokki'
 
 function App() {
   return (
@@ -23,12 +26,19 @@ function App() {
           <Routes>
           <Route path="/" element={<LoginSignup />} />
           <Route path="/home" element={<HomePage />} />
+
           <Route path="/cremebrulee" element={<CremeBrulee />} />
           <Route path="/quichelorraine" element={<QuicheLorraine />} />
           <Route path="/ratatouille" element={<Ratatouille />} />
+
           <Route path="/tiramisu" element={<Tiramisu />} />
           <Route path="/branzinoalforno" element={<BranzinoalForno />} />
           <Route path="/arancini" element={<Arancini />} />
+
+          <Route path="/dakgalbi" element={<DakGalbi />} />
+          <Route path="/mochi" element={<Mochi />} />
+          <Route path="/tteokkbokki" element={<Tteokbokki />} />
+
           <Route path="/admin" element={<Admin />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />

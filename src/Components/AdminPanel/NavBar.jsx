@@ -26,7 +26,7 @@ import './AdminDashboard.css';
       
       <div id="nav-header">
         <a id="nav-title" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-codepen"></i>FLAVÖRS
+          <i></i>FLAVÖRS
         </a>
         <label htmlFor="nav-toggle">
           <span id="nav-toggle-burger"></span>
@@ -41,7 +41,7 @@ import './AdminDashboard.css';
         </div>
         <div className="nav-button">
           <i className="fas fa-images"></i>
-          <Link to='/adminusers'><span>Admin Users</span></Link>
+          <Link to='/adminusers'><span>Users</span></Link>
         </div>
         <div className="nav-button">
           <i className="fas fa-thumbtack"></i>
