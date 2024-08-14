@@ -1,4 +1,4 @@
-/* Unique class for About Us Page body */
+
 .about-us-page-body 
 {
     background: 
@@ -10,14 +10,12 @@
     overflow: hidden;
 }
 
-/* Unique class for container */
 .about-us-container 
 {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Unique class for about section */
 .about-us-section 
 {
     display: flex;
@@ -25,7 +23,6 @@
     margin-bottom: 40px;
 }
 
-/* Unique class for left and right content in about section */
 .about-us-left, .about-us-right 
 {
     flex: 1;
@@ -50,28 +47,28 @@
 
 .about-us-right img, .about-us-left img 
 {
-    width: 100%; /* Make image responsive */
-    max-width: 600px; /* Maximum width to avoid it getting too large */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Border radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .about-us-left img 
 {
-    max-width: 700px; /* Increase the max-width for left image */
-    height: 400px; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add border radius similar to right image */
-    /* margin-top: 7%; Optional: Adjust spacing */
+    max-width: 700px;
+    height: 400px; 
+    border-radius: 10px; 
+  
 }
 
 .mission-section .about-us-right img 
 {
-    width: 100%; /* Make image responsive */
-    max-width: 600px; /* Maximum width to avoid it getting too large */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .team-section 
@@ -127,7 +124,7 @@
     line-height: 1.4;
 }
 
-/* Unique class for footer */
+
 .about-us-footer
 {
     text-align: center;

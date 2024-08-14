@@ -9,7 +9,7 @@
     margin-top: 10px;
     margin-left: 8cm;
     width: 77%;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box; 
   }
   
   .welcome-card h2 {

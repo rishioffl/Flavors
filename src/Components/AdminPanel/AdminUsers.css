@@ -71,28 +71,26 @@
 .admin-main-content {
     flex-grow: 1;
     padding: 20px;
-    /* Ensure heading is not pushed down */
-    margin-top: 10px; /* Remove margin at the top */
+
+    margin-top: 10px; 
 }
 .admin-heading {
     margin-top: 0;
-    background: rgba(204, 49, 49, 0.1); /* Transparent background */
+    background: rgba(204, 49, 49, 0.1); 
     padding: 10px;
-    /* border-radius: 7px;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1), 0 0 15px; */
     margin-bottom: 20px;
     max-width: 1000px;
-    backdrop-filter: blur(10px); /* Optional: add blur effect to enhance transparency */
-    position: relative; /* Ensure it's positioned relative to its container */
+    backdrop-filter: blur(10px); 
+    position: relative; 
 }
 
 .admin-heading h1 {
     color: black;
-    font-size: 28px; /* Adjust font size as needed */
-    margin: 0; /* Remove default margin */
+    font-size: 28px;
+    margin: 0; 
 }
 
-/* Button container */
+
 .admin-add-owner-button {
     position: absolute;
     top: 35px;
@@ -110,8 +108,8 @@
 }
 .admin-users-table {
     width: 98%;
-    border-collapse: separate; /* Change from collapse to separate for spacing */
-    border-spacing: 0 10px; /* Add space between rows */
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
     padding-left: 40px;
 }
 
@@ -128,25 +126,25 @@
 }
 
 .admin-users-table tbody tr {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .admin-users-table tbody tr:hover {
-    background-color: #f5f5f5; /* Light background color on hover */
-    transform: translateY(-5px); /* Lift row up on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect on hover */
+    background-color: #f5f5f5; 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .admin-button {
     border: none;
     border-radius: 5px;
-    padding: 10px 20px; /* Increased padding for larger buttons */
-    font-size: 16px; /* Larger font size */
+    padding: 10px 20px; 
+    font-size: 16px;
     cursor: pointer;
     outline: none;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better depth */
-    margin-right: 10px; /* Add space between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-right: 10px; 
 }
 
 .admin-add-button, .admin-delete-button {
@@ -155,9 +153,9 @@
 }
 
 .admin-add-button:hover, .admin-delete-button:hover {
-    background-color: #333; /* Darker shade of black on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #333; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .admin-delete-button {
@@ -175,7 +173,7 @@
     justify-content: center;
     z-index: 1000;
 }
-/* AdminOwners.css */
+
 
 
 .popup-content {
@@ -189,9 +187,8 @@
 .popup-input-group {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Increase space between input fields */
+    gap: 15px; 
 }
-
 
 .popup-content h2 {
     margin-bottom: 20px;
@@ -201,13 +198,13 @@
 .adminaddpopup-input {
     padding: 12px;
     font-size: 16px;
-    border-radius: 6px; /* Enhanced border radius */
+    border-radius: 6px; 
     border: 1px solid #ccc;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box; 
 }
 
-/* Popup Buttons */
+
 .popup-buttons {
     display: flex;
     justify-content: space-between;

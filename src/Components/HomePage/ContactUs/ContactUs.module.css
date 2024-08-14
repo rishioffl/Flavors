@@ -25,7 +25,6 @@
 .form {
   width: 100%;
   max-width: 820px;
-  /* background-color: #fff; */
 
     border-radius: 8px; backdrop-filter: blur(20px);
 background-color: rgba(255, 255, 255, 0.5); 
@@ -40,9 +39,7 @@ border: 1px solid rgba(2, 1, 1, 0.3);
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* CONTACT FORM BG */
 .contactForm {
-  /* background-color: #8b1abc; */
   position: relative;
   border-radius: 8px; backdrop-filter: blur(20px);
 background-color: rgba(245, 34, 34, 0.5); 
@@ -279,7 +276,6 @@ form {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  /* background: linear-gradient(to bottom, #d41c1c, #d5cc2c); */
   background: linear-gradient(to right, #d41c1c, #298cb6);
   bottom: 50%;
   right: 50%;
@@ -394,15 +390,14 @@ form {
 
 .socialicon {
   color: black;
-    width: 30px; /* Size of the icons */
+    width: 30px; 
     height: 30px;
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    margin: 10px;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
 }
 
 .socialicon:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transform: scale(1.1); 
 }
 
 .successMessage

@@ -5,8 +5,8 @@
   
   .adminstats-sidebar {
     width: 250px;
-    height: 100vh; /* Ensure the sidebar covers the full height of the viewport */
-    background: linear-gradient(135deg, #0f0f0f, #2c2c2c); /* Dark gradient background */
+    height: 100vh; 
+    background: linear-gradient(135deg, #0f0f0f, #2c2c2c); 
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -20,15 +20,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically */
+    justify-content: center; 
     text-align: center;
-    background: #e2944f; /* Background color for the content area */
-    min-height: 100vh; /* Ensure the content area covers the full height */
+    background: #e2944f; 
+    min-height: 100vh; 
   }
   
   .adminstats-content h1 {
     font-size: 2.5em;
-    color: #ff6600; /* Neon blue text color */
+    color: #ff6600; 
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
     margin-bottom: 40px;
   }
@@ -37,14 +37,14 @@
     width: 80%;
     margin: 20px 0;
     padding: 20px;
-    background: #2a2a2a; /* Slightly lighter background for sections */
-    box-shadow: 0 0 10px rgba(42, 42, 26, 0.5); /* Neon glow effect */
+    background: #2a2a2a; 
+    box-shadow: 0 0 10px rgba(42, 42, 26, 0.5); 
     border-radius: 10px;
   }
   
   .adminstats-section h2 {
     font-size: 1.8em;
-    color: #ff4d00; /* Neon blue text color */
+    color: #ff4d00; 
     margin-bottom: 20px;
   }
   
@@ -55,9 +55,9 @@
   }
   
   .adminstats-card, .adminstats-stat-card {
-    background: #1f1f1f; /* Background color for cards */
-    color: #ff2a00; /* Neon blue text color */
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+    background: #1f1f1f; 
+    color: #ff2a00; 
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); 
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -67,6 +67,6 @@
   }
   
   .adminstats-card:hover, .adminstats-stat-card:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
+    transform: scale(1.05); 
   }
   
